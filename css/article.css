@@ -1,0 +1,62 @@
+._article-data {
+  font-weight: 300;
+  color: #211B28;
+}
+._article-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.article-content {
+  margin: 64px 0 90px;
+  color: #25120E;
+}
+.article-content .h1 {
+  font-size: 2.5rem;
+  line-height: 125%; /* 50/40 */
+  letter-spacing: -0.04rem;
+  text-align: left;
+}
+.article-content .block-img {
+  margin-bottom: 50px;
+}
+.article-content .article-p {
+  line-height: 187.5%; /* 30/16 */
+  font-weight: 300;
+  letter-spacing: -0.01rem;
+}
+.article-content .article-p:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.article-content .article-img {
+  margin: 60px 0 50px;
+}
+.article-content ul li {
+  line-height: 193.75%; /* 31/16 */
+  margin: 0 0 0 32px;
+  position: relative;
+}
+.article-content ul li:not(:last-child) {
+  margin: 0 0 20px 32px;
+}
+.article-content ul li b {
+  font-weight: 500;
+  letter-spacing: -0.01rem;
+}
+.article-content ul li::before {
+  content: "";
+  background-image: url("../img/mark.svg");
+  position: absolute;
+  top: 5px;
+  left: -32px;
+  width: 20px;
+  height: 20px;
+}
+.article-content .article-heading {
+  color: #211B28;
+  font-size: 2.5rem;
+  line-height: 125%; /* 50/40 */
+  letter-spacing: -0.04rem;
+  margin-bottom: 30px;
+}

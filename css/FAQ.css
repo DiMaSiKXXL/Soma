@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,regular,500,700);
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.faq .item__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header {
+  padding: 50px 99px 87px;
+  border: none;
+}
+
+._page-h1 {
+  margin-bottom: 79px;
+}
+
+.faq .pop-up {
+  margin-bottom: 123px;
+}
+.faq .pop-up__h2 {
+  font-size: 2.5rem;
+  line-height: 135%;
+  letter-spacing: -0.05em;
+  color: #25120E;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(37, 18, 14, 0.2);
+}
+.faq .pop-up__menu {
+  width: 1200px;
+  margin-left: auto;
+  margin-bottom: 148px;
+}
+.faq .pop-up__item {
+  position: relative;
+  overflow: hidden;
+  max-width: 1197px;
+  padding: 30px 0;
+}
+.faq ._open .item__btn::before, .faq ._open .item__btn::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.faq ._open .item__btn::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.faq ._open .item__btn._active::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.faq ._open .item__head {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+.faq ._open .item__text {
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  -webkit-transition: opacity 0.75s;
+  transition: opacity 0.75s;
+  opacity: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.faq .item {
+  position: relative;
+  padding-bottom: 34px;
+  border-bottom: 1px solid rgba(37, 18, 14, 0.2);
+}
+.faq .item__head {
+  cursor: pointer;
+}
+.faq .item__heading {
+  font-size: 1.4375rem;
+  line-height: 100%;
+  font-weight: 500;
+}
+.faq .item__btn {
+  position: relative;
+}
+.faq .item__btn::before, .faq .item__btn::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  top: -1px;
+  right: 0;
+  background: #000;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.faq .item__btn._active::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.faq .item__text {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.35s ease;
+  transition: max-height 0.35s ease;
+  position: absolute;
+  opacity: 0;
+  top: 78px;
+  left: 0;
+  font-size: 1rem;
+  line-height: 193.75%;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
