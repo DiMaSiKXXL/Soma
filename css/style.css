@@ -116,7 +116,6 @@ a[disabled] {
 
 .header {
   padding: 50px 99px 50px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1176470588);
 }
 .header__nav {
   display: -webkit-box;
@@ -427,4 +426,14 @@ a[disabled] {
   margin-top: 98px;
   padding: 27px 0 24px 0;
   border-top: 1px solid rgba(231, 225, 210, 0.2);
+}
+.index__first-sheet ._page-h1 {
+  margin: 631px 0 195px 0;
+}
+
+.bgimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -50;
 }
